@@ -12,6 +12,9 @@ It is a direct extraction from Shopify where the job table is responsible for a 
 * batch imports 
 * spam checks 
 
+Koombea's fork adds a user and object relationship to the table in case you need the relationships for stats or queue monitoring.
+
+
 h2. Installation
 
 To install as a gem, add the following to @config/environment.rb@:
@@ -108,6 +111,13 @@ end
   
 Delayed::Job.enqueue NewsletterJob.new('lorem ipsum...', Customers.find(:all).collect(&:email))
 </pre>
+
+== Koombea edit ==
+To send user and object id's simply use:
+
+<pre>
+	Delayed::Job.enqueue NewsletterJob.new('lorem ipsum...', Customers.find(:all).collect(&:email)), priority, run_at, user_id, object_id
+	</pre>
 
 h2. Gory Details
 

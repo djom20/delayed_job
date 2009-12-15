@@ -5,13 +5,13 @@
 
 Gem::Specification.new do |s|
   s.name = %q{delayed_job}
-  s.version = "1.8.4"
+  s.version = "1.8.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Brandon Keepers", "Tobias L\303\274tke"]
-  s.date = %q{2009-10-06}
+  s.authors = ["Andres Pena","Brandon Keepers", "Tobias L\303\274tke"]
+  s.date = %q{2009-12-15}
   s.description = %q{Delayed_job (or DJ) encapsulates the common pattern of asynchronously executing longer tasks in the background. It is a direct extraction from Shopify where the job table is responsible for a multitude of core tasks.}
-  s.email = %q{tobi@leetsoft.com}
+  s.email = %q{max@koombea.com}
   s.extra_rdoc_files = [
     "README.textile"
   ]
@@ -42,7 +42,7 @@ Gem::Specification.new do |s|
      "spec/story_spec.rb",
      "tasks/jobs.rake"
   ]
-  s.homepage = %q{http://github.com/collectiveidea/delayed_job}
+  s.homepage = %q{http://github.com/koombea/delayed_job}
   s.rdoc_options = ["--main", "README.textile", "--inline-source", "--line-numbers"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}

@@ -9,6 +9,8 @@ class CreateDelayedJobs < ActiveRecord::Migration
       table.datetime :locked_at                    # Set when a client is working on this object
       table.datetime :failed_at                    # Set when all retries have failed (actually, by default, the record is deleted instead)
       table.string   :locked_by                    # Who is working on this object (if locked)
+      table.integer  :user_id                      # Who created this job
+      table.ingeter  :object_id                    # The object related to this job
       table.timestamps
     end
 
