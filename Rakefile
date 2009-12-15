@@ -7,7 +7,7 @@ rescue LoadError
 end
 
 Jeweler::Tasks.new do |s|
-  s.name     = "delayed_job"
+  s.name     = "koombea-delayed_job"
   s.summary  = "Database-backed asynchronous priority queue system -- Extracted from Shopify"
   s.email    = "max@koombea.com"
   s.homepage = "http://github.com/koombea/delayed_job"
