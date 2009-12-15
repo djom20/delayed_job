@@ -20,8 +20,7 @@ h2. Installation
 To install as a gem, add the following to @config/environment.rb@:
 
 <pre>
-config.gem 'collectiveidea-delayed_job', :lib => 'delayed_job',
-  :source => 'http://gems.github.com'
+config.gem 'koombea-delayed_job', :lib => 'delayed_job'
 </pre>
 
 Rake tasks are not automatically loaded from gems, so you'll need to add the following to your Rakefile:
@@ -37,7 +36,7 @@ end
 To install as a plugin:
 
 <pre>
-script/plugin install git://github.com/collectiveidea/delayed_job.git
+script/plugin install git://github.com/koombea/delayed_job.git
 </pre>
 
 After delayed_job is installed, run:
